@@ -26,7 +26,32 @@
 
 <!-- MAIN -->
     <main>
+        <h1>Travel With Boolean</h1>
 
+        <div>
+            <label for="user-name">Nome e Cognome</label>
+            <input type="text" id="user-name">
+            
+            <label for="user-km">Km da percorrere</label>
+            <input type="text" id="user-km">
+
+            <label for="user-age">Fascia d'età</label>
+            <select id="user-age">
+                <option value=""></option>
+                <option value="minor">Minorenne</option>
+                <option value="adult">Maggiorenne</option>
+                <option value="over">Over 65</option>
+            </select>
+    
+            <button id="submit-btn">Genera</button>
+            <button id="cancel-btn">Annulla</button>
+        </div>
+    
+        <h2 id="result-name"></h2>
+        <h2 id="result-offer"></h2>
+        <h2 id="result-carriage"></h2>
+        <h2 id="result-code"></h2>
+        <h2 id="result-price"></h2>
     </main>
 <!-- /MAIN -->
 
