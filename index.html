@@ -19,42 +19,88 @@
 <body>
 
 <!-- HEADER -->
-    <header>
-
+    <header class="d-flex justify-content-center align-items-center">
+        <img src="img/logo.svg" alt="Logo">
     </header>
 <!-- /HEADER -->
 
 <!-- MAIN -->
     <main>
-        <h1>Travel With Boolean</h1>
+<!-- JUMBOTRON -->
+        <div class="jumbotron">
+            <h1 class="text-center d-flex justify-content-center align-items-center">Travel Whit Boolean</h1>
+        </div>
+<!-- /JUMBOTRON -->
 
-        <div>
-            <label for="user-name">Nome e Cognome</label>
-            <input type="text" id="user-name">
+<!-- CALCOLO DEL PREZZO -->
+        <section>
+            <div class="container my-4">
+                <div class="row">
+                    <h2 class="text-center py-5 px-0 m-0">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <label for="user-name" class="px-3">Nome e Cognome</label>
+                        <input type="text" id="user-name" class="px-3">
+                        
+                        <label for="user-km" class="px-3">Km da percorrere</label>
+                        <input type="text" id="user-km" class="px-3">
             
-            <label for="user-km">Km da percorrere</label>
-            <input type="text" id="user-km">
+                        <label for="user-age" class="px-3">Fascia d'età</label>
+                        <select id="user-age" class="px-3">
+                            <option value=""></option>
+                            <option value="minor">Minorenne</option>
+                            <option value="adult">Maggiorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col d-flex justify-content-center align-items-center">
+                        <div class="d-flex">
+                            <button id="submit-btn" class="green mx-3">Genera</button>
+                            <button id="cancel-btn" class="red mx-3">Annulla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- /CALCOLO DEL PREZZO -->
 
-            <label for="user-age">Fascia d'età</label>
-            <select id="user-age">
-                <option value=""></option>
-                <option value="minor">Minorenne</option>
-                <option value="adult">Maggiorenne</option>
-                <option value="over">Over 65</option>
-            </select>
-        </div>
-        <div>
-            <button id="submit-btn">Genera</button>
-            <button id="cancel-btn">Annulla</button>
-        </div>
-    
-        <h2 id="result-name"></h2>
-        <h2 id="result-offer"></h2>
-        <h2 id="result-carriage"></h2>
-        <h2 id="result-code"></h2>
-        <h2 id="result-price"></h2>
+<!-- PREZZO DIGLIETTO -->
+            <div class="container mb-4">
+                <div class="row">
+                    <h2 class="text-center py-5 px-0 m-0">IL TUO BIGLIETTO</h2>
+                    <div class="col text-center colgrey">
+                        <h4 class="m-0 mt-2" >Nome del passeggero</h4>
+                        <h3 id="result-name" class="d-flex justify-content-center align-items-center pt-5 pb-3 m-0"></h3>    
+                    </div>
+                    <div class="col text-center">
+                        <h4 class="m-0 mt-2" >Offerta</h4>
+                        <h3 id="result-offer" class="d-flex justify-content-center align-items-center pt-5 pb-3 m-0"></h3>
+                    </div>
+                    <div class="col text-center">
+                        <h4 class="m-0 mt-2" >Carrozza</h4>
+                        <h3 id="result-carriage" class="d-flex justify-content-center align-items-center pt-5 pb-3 m-0"></h3>
+                    </div>
+                    <div class="col text-center">
+                        <h4 class="m-0 mt-2" >Codice CP</h4>
+                        <h3 id="result-code" class="d-flex justify-content-center align-items-center pt-5 pb-3 m-0"></h3>
+                    </div>
+                    <div class="col text-center">
+                        <h4 class="m-0 mt-2" >Prezzo biglietto</h4>
+                        <h3 id="result-price" class="d-flex justify-content-center align-items-center pt-5 pb-3 m-0"></h3>
+                    </div>
+                </div>
+            </div>
+<!-- /PREZZO DIGLIETTO -->
+        </section>
+        <div class="footer-top"></div>
     </main>
 <!-- /MAIN -->
+
+<!-- FOOTER -->
+    <footer class="d-flex justify-content-center align-items-center">
+        <h3>Grazie per aver scelto Travel With Boolean</h3>
+    </footer>
+<!-- /FOOTER -->
 
 <!-- SCRIPT-JS -->
     <script src="js/script.js"></script>

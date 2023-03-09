@@ -1,5 +1,5 @@
 // Alert
-// alert('ATTENZIONE! \nQuesto è il sito ufficiale di Travel Whit Boolean. Qui potrai prenotare il tuo biglietto del treno. Buon Viaggio :)');
+alert('ATTENZIONE! \nQuesto è il sito ufficiale di Travel Whit Boolean. Qui potrai prenotare il tuo biglietto del treno. Buon Viaggio :)');
 
 
 const sumbitBtn = document.getElementById("submit-btn");
@@ -58,14 +58,9 @@ sumbitBtn.addEventListener("click", function() {
     userNameInput.value = "";
     userKmInput.value = "";
     userAgeInput.value = "";
-
-    // document.getElementById("result-name").innerHTML = '';
-    // document.getElementById("result-offer").innerHTML = '';
-    // document.getElementById("result-carriage").innerHTML = '';
-    // document.getElementById("result-code").innerHTML = '';
-    // document.getElementById("result-price").innerHTML = '';
-
 });
+
+// ANNULLA
 
 const cancelBtn = document.getElementById("cancel-btn");
 cancelBtn.addEventListener("click", function() {
@@ -92,5 +87,5 @@ cancelBtn.addEventListener("click", function() {
     document.getElementById("result-carriage").innerHTML = '';
     document.getElementById("result-code").innerHTML = '';
     document.getElementById("result-price").innerHTML = '';
-});
 
+});
